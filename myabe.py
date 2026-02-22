@@ -129,7 +129,7 @@ else:
         
         # Cálculos de Impuesto
         isracu = ((gananacu - float(fila.iloc[8])) * float(fila.iloc[11])) + float(fila.iloc[10])
-        tasafectiva = truncar(isracu / gananacu, 4)
+        tasafectiva = (isracu / gananacu)
         
         ganannoacu = ganej - gananacu
         isrnoacu = ganannoacu * tasafectiva
